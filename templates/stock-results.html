@@ -1,0 +1,10 @@
+{% if stocks %}
+  <ul>
+    {% for stock in stocks %}
+    <!-- Add a form here to direct a view.function to add this stock onto a group to display -->
+      <li>{{ stock.title }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Stock not found.</p>
+{% endif %}
